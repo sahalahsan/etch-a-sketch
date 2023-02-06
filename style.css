@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.parentdiv {
+    width: 760px;
+    height: 760px;
+    box-sizing: content-box;
+    background-color: #fff;
+    border: 3px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parentdiv > div {
+    width: 760px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subdiv > div {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.controls {
+    background-color: thistle;
+    color: rebeccapurple;
+    border: 3px solid teal;
+    width: 250px;
+    height: 250px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.controls > div {
+    border: 2px solid rebeccapurple;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.controls > div:first-child {
+    width: 200px;
+}
+
+.controls > div:last-child {
+    
+}
+
+form > input:last-child {
+    color: rebeccapurple;
+    background-color: #fff;
+    padding: 3px;
+    border: 2px solid rebeccapurple;
+}
